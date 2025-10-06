@@ -33,6 +33,7 @@ class UserController {
 
     public void validateRequest(RegisterUserRequestDto requestDto) throws InvalidRequestException {
 
+        System.out.println("Hello world!");
         if(requestDto.getUserName()==null || requestDto.getPassword()==null || requestDto.getPhoneNumber()==null)
             throw  new InvalidRequestException("UserName or password or phoneNumber");
     }
